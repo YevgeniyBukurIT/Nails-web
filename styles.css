@@ -22,9 +22,11 @@ p {
 
 /*--- Header ---*/
 .header {
+    position: absolute;
+    z-index: 1000;
     width: 100%;
     height: 100px;
-    background: #efa1af;
+    /*background: #efa1af;*/
 }
 
 .container {
@@ -38,7 +40,7 @@ p {
     align-items: center;
     height: 100px;
 
-    /*border: 1px solid black;*/
+    border-bottom: white 1px solid;
 
 }
 
@@ -51,5 +53,85 @@ p {
     font-family: "Nunito Sans", sans-serif;
     font-size: 36px;
     text-transform: uppercase;
+    color: white;
 
+}
+
+.nav {
+    display: flex;
+}
+
+.nav_inner {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-right: 15px;
+}
+
+.nav_inner:hover {
+    color: #c4174f;
+    cursor: pointer;
+}
+
+.nav_inner:last-child {
+    padding-right: 0;
+}
+
+.intro {
+    position: relative;
+    z-index: 999;
+    width: 100%;
+    height: 750px;
+    background: #efa1af url("img/header/main-background.jpg") bottom no-repeat;
+
+
+}
+
+.intro_inner {
+    padding-top: 100px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.intro_inner_h4 {
+    color: white;
+    font-size: 55px;
+    line-height: 1.09;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 150px;
+
+
+}
+
+.intro_inner_p {
+    color: white;
+    font-size: 22px;
+    line-height: 1.5;
+    font-family: "Nunito Sans Regular", sans-serif;
+    margin-top: 25px;
+}
+
+.intro_inner_button {
+    width: 200px;
+    height: 50px;
+    color: white;
+    font-size: 13px;
+    font-family: "Nunito Sans", sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+    background: #c4174f;
+    cursor: pointer;
+    border: none;
+    margin-top: 90px;
+}
+
+.intro_inner_button:hover {
+    background: #e55175;
 }
