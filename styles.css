@@ -190,7 +190,7 @@ p {
     height: 350px;
     overflow: hidden;
     position: relative;
-    transition: .2s;
+
 }
 
 .courses_item_img {
@@ -206,7 +206,7 @@ p {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 0;
+    z-index: 2;
     width: 100%;
     height: 100%;
     display: flex;
@@ -214,7 +214,8 @@ p {
     justify-content: center;
     text-align: center;
     background: #e55175;
-    opacity: 0.9;
+    opacity: 0;
+    transition: .2s;
 
 
 }
@@ -235,7 +236,7 @@ p {
 }
 
 .courses_item:hover .courses_content {
-    z-index: 2;
+    opacity: 0.9;
 }
 
 
