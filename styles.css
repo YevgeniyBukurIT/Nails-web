@@ -263,11 +263,43 @@ p {
 
 
 /*--- Services ---*/
+.services {
+    width: 100%;
+    height: 500px;
+    background: #fed7da;
+}
+
+.services_inner{
+    padding: 20px;
+    display: flex;
+}
+
+.services_img {
+    display: flex;
+    justify-content: center;
+    width: 585px;
+    }
 
 
+.services_img img {
+    height: 460px;
+    width: auto;
+}
 
+.services_content {
+    width: 585px;
+    margin: 0 auto;
+    text-align: center;
+}
 
-
+.services_content_p {
+    color: black;
+    font-family: "Nunito Sans", sans-serif;
+    font-style: italic;
+    font-size: 24px;
+    line-height: 1.3;
+    margin-top: 150px;
+}
 
 
 
