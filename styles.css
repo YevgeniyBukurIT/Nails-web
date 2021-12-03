@@ -5,6 +5,7 @@ body {
     background: #f2f2f0;
 
 }
+
 h1, h2, h3, h4, h5, h6 {
     padding: 0;
     margin: 0;
@@ -68,7 +69,7 @@ p {
     font-size: 14px;
     text-transform: uppercase;
     padding-right: 15px;
-    transition: .2s ;
+    transition: .2s;
 }
 
 .nav_inner:hover {
@@ -118,13 +119,14 @@ p {
     margin-top: 25px;
 }
 
-.intro_inner_button {
+.subscribe_button {
     width: 200px;
     height: 50px;
     color: white;
     font-size: 14px;
     font-family: "Nunito Sans", sans-serif;
     font-style: italic;
+    font-weight: 600;
     text-transform: uppercase;
     background: #c4174f;
     cursor: pointer;
@@ -133,7 +135,7 @@ p {
     transition: 0.2s;
 }
 
-.intro_inner_button:hover {
+.subscribe_button:hover {
     background: #e55175;
 }
 
@@ -153,11 +155,13 @@ p {
 .aboutMe_photo img {
     width: 325px;
     height: 635px;
+    box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.7);
 }
 
 .aboutMe_text {
     width: 500px;
     text-align: center;
+
     margin: 0 auto;
 }
 
@@ -187,7 +191,7 @@ p {
 }
 
 .courses_item {
-    width: 100% ;
+    width: 100%;
     max-width: 475px;
     height: 350px;
     overflow: hidden;
@@ -225,7 +229,7 @@ p {
 .courses_content_pUppercase {
     color: white;
     font-size: 14px;
-    font-family: "Nunito Sans",sans-serif;
+    font-family: "Nunito Sans", sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     padding-bottom: 5px;
@@ -234,7 +238,7 @@ p {
 .courses_content_p {
     color: white;
     font-size: 14px;
-    font-family: "Nunito Sans",sans-serif;
+    font-family: "Nunito Sans", sans-serif;
 }
 
 .courses_item:hover .courses_content {
@@ -242,13 +246,14 @@ p {
 }
 
 /*--- MyWorks ---*/
-.myWorks_text_h4 {
+.myWorks_title {
     margin-top: 30px;
 }
 
 .myWorks {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .myWorks_inner {
@@ -256,8 +261,8 @@ p {
 }
 
 .myWorks_img {
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     transition: 0.5s;
 }
 
@@ -269,7 +274,7 @@ p {
     background: #fed7da;
 }
 
-.services_inner{
+.services_inner {
     padding: 20px;
     display: flex;
 }
@@ -278,7 +283,7 @@ p {
     display: flex;
     justify-content: center;
     width: 585px;
-    }
+}
 
 
 .services_img img {
@@ -290,10 +295,15 @@ p {
     width: 585px;
     margin: 0 auto;
     text-align: center;
+    color: white;
+}
+
+.services_text_h4_modify {
+    color: white;
 }
 
 .services_content_p {
-    color: black;
+
     font-family: "Nunito Sans", sans-serif;
     font-style: italic;
     font-size: 24px;
@@ -301,6 +311,118 @@ p {
     margin-top: 150px;
 }
 
+/*--- Studio ---*/
+.studio_title {
+    margin-top: 30px;
+}
 
+.studio {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.studio_inner {
+    width: 33.33333%;
+    text-align: center;
+    padding: 50px 70px;
+}
 
+.studio_inner_h4 {
+    font-size: 14px;
+    font-family: "Nunito Sans", sans-serif;
+    text-transform: uppercase;
+}
+
+.studio_inner_p {
+    font-size: 13px;
+    line-height: 1.5;
+    font-family: "Nunito Sans", sans-serif;
+    margin-top: 25px;
+}
+
+/*--- Subscribe ---*/
+.subscribe {
+    margin-top: 50px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.subscribe_h4 {
+    font-size: 28px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.subscribe_p {
+    font-size: 14px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+}
+
+.subscribe_p a {
+    text-decoration: none;
+    color: #c4174f;
+    font-weight: bold;
+    transition: .5s;
+}
+
+.subscribe_p a:hover {
+    color: #e55175;
+
+}
+
+.subscribe_button_modify {
+    width: 250px;
+    margin-top: 50px;
+}
+
+/*--- Footer ---*/
+
+.footer {
+    width: 100%;
+    height: 300px;
+    background: #efa1af;
+}
+
+.footer_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.footer_inner {
+    display: flex;
+    justify-content: center;
+}
+
+.footer_inner_h4 {
+    font-size: 14px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.5;
+    color: white;
+    padding: 30px 70px 0;
+    text-align: center;
+}
+
+.socialNetwork {
+    margin-top: 5px
+}
+
+.socialNetwork_img {
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+
+.socialNetwork_link:last-child {
+    margin-right: 0;
+}
+
+.socialNetwork_link {
+    text-decoration: none;
+    margin-right: 10px;
+}
