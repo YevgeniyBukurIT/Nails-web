@@ -27,7 +27,24 @@ p {
     position: absolute;
     z-index: 1000;
     width: 100%;
-    /*background: #efa1af;*/
+
+}
+
+.header.fixed {
+    position: fixed;
+    background: #efa1af;
+    transition: 0.5s;
+}
+
+.header.fixed .header_inner {
+    border-bottom: none;
+    height: 70px;
+}
+
+.header.fixed .header_inner .headerLogoImg{
+    height: 68px;
+    width: auto;
+
 }
 
 .container_1170 {
