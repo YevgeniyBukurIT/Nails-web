@@ -16,6 +16,9 @@
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
     <meta charset="UTF-8">
     <title>GROM_MANIC_STUDIO</title>
 </head>
@@ -31,12 +34,12 @@
             </div>
 
             <nav class="nav">
-                <p class="nav_inner">Головна</p>
-                <p class="nav_inner">Про мене</p>
-                <p class="nav_inner">Курси</p>
-                <p class="nav_inner">Мої роботи</p>
-                <p class="nav_inner">Послуги</p>
-                <p class="nav_inner">Студія</p>
+                <a class="nav_inner" data-scroll="#intro">Головна</a>
+                <a class="nav_inner" data-scroll="#aboutMe">Про мене</a>
+                <a class="nav_inner" data-scroll="#courses">Курси</a>
+                <a class="nav_inner" data-scroll="#myWorks">Мої роботи</a>
+                <a class="nav_inner" data-scroll="#services">Послуги</a>
+                <a class="nav_inner" data-scroll="#studio">Студія</a>
             </nav>
         </div>
     </div>
@@ -50,7 +53,10 @@
                 повинні бути в повному порядку!</h4>
             <p class="intro_inner_p">Рада вітати Вас у своїй майстерні краси. Задоволенням попрацюю з вашими
                 нігтиками. <br>
-                Стежте за мною в Instagram та Facebook</p>
+                Стежте за мною в <a class="intro_link_socialNet" href="https://www.instagram.com/grom_manic_studio/"
+                                    target="_blank">Instagram</a> та <a class="intro_link_socialNet"
+                                                                        href="https://www.facebook.com/profile.php?id=100044968410084"
+                                                                        target="_blank">Facebook</a></p>
             <a href="https://mst.link/grom_dana" title="Натисни, щоб записатися онлайн" target="_blank">
                 <button class="subscribe_button">Записатись</button>
             </a>
@@ -60,7 +66,7 @@
 
 <!-- AboutMe -->
 <div class="container_950">
-    <div class="aboutMe">
+    <div class="aboutMe" id="aboutMe">
 
         <div class="aboutMe_photo">
             <img src="img/aboutMe/mainPhoto.png" alt="">
@@ -75,7 +81,7 @@
 </div>
 
 <!-- Courses -->
-<div class="courses">
+<div class="courses" id="courses">
 
     <div class="courses_item">
         <img class="courses_item_img" src="img/courses/cource-1.png" alt="">
@@ -146,7 +152,7 @@
 <!-- MyWorks -->
 <div class="container_1170">
     <h4 class="text_h4 myWorks_title">Мої витвори</h4>
-    <div class="myWorks">
+    <div class="myWorks" id="myWorks">
 
         <div class="myWorks_inner">
             <a href="https://www.instagram.com/p/CU-TXbDNDw6/" target="_blank"
@@ -194,18 +200,49 @@
 
 
 <!-- Services -->
-<div class="services">
+<div class="services" id="services">
     <div class="container_1170">
-        <div class="services_inner">
 
-            <div class="services_img">
-                <img src="img/services/service-1.png" alt="">
+        <div class="servicesSlider" id="servicesSlider">
+            <div>
+                <div class="services_inner">
+                    <div class="services_img">
+                        <img src="img/services/service-1.png" alt="">
+                    </div>
+
+                    <div class="services_content">
+                        <h4 class="text_h4 services_text_h4_modify">Послуги та прайс</h4>
+                        <p class="services_content_p">Манікюр без покриття <br><br> 150 грн</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="services_content">
-                <h4 class="text_h4 services_text_h4_modify">Послуги та прайс</h4>
-                <p class="services_content_p">Манікюр без покриття <br><br> 150 грн</p>
+            <div>
+                <div class="services_inner">
+                    <div class="services_img">
+                        <img src="img/myWorks/work-1-circle.png" alt="">
+                    </div>
+
+                    <div class="services_content">
+                        <h4 class="text_h4 services_text_h4_modify">Послуги та прайс</h4>
+                        <p class="services_content_p">Манікюр без покриття <br><br> 150 грн</p>
+                    </div>
+                </div>
             </div>
+
+            <div>
+                <div class="services_inner">
+                    <div class="services_img">
+                        <img src="img/myWorks/work-1-circle.png" alt="">
+                    </div>
+
+                    <div class="services_content">
+                        <h4 class="text_h4 services_text_h4_modify">Послуги та прайс</h4>
+                        <p class="services_content_p">Манікюр без покриття <br><br> 150 грн</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
@@ -214,7 +251,7 @@
 <!-- Studio -->
 <div class="container_1170">
     <h4 class="text_h4 studio_title">Затишна студія</h4>
-    <div class="studio">
+    <div class="studio" id="studio">
 
         <div class="studio_inner">
             <img class="studio_inner_img" src="img/studioICO/studio-1.png" alt="">
@@ -294,7 +331,7 @@
                 <h4>Слідкуй за мною <br>
                     у соціальних мережах</h4>
                 <div class="socialNetwork">
-                    <a class="socialNetwork_link" href="https://www.instagram.com/grom_manic_studio" title="Instagram"
+                    <a class="socialNetwork_link" href="https://www.instagram.com/grom_manic_studio/" title="Instagram"
                        target="_blank">
                         <img class="socialNetwork_img" src="img/socialNetworkICO/instagram.svg" alt="">
                     </a>
@@ -318,6 +355,7 @@
 </div>
 
 <!--- JavaScript --->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="app.js"></script>
 
 </body>

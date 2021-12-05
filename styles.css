@@ -52,6 +52,7 @@ p {
     margin: 0 auto;
 }
 
+
 .header_inner {
     display: flex;
     justify-content: space-between;
@@ -85,7 +86,7 @@ p {
     color: white;
     font-size: 14px;
     text-transform: uppercase;
-    padding-right: 15px;
+    padding: 0 7px;
     transition: .2s;
 }
 
@@ -134,6 +135,19 @@ p {
     line-height: 1.5;
     font-family: "Nunito Sans Regular", sans-serif;
     margin-top: 25px;
+}
+
+.intro_link_socialNet {
+    color: white;
+    font-size: 22px;
+    line-height: 1.5;
+    font-family: "Nunito Sans Regular", sans-serif;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.intro_link_socialNet:hover {
+    color: #c4174f;
 }
 
 .subscribe_button {
@@ -291,6 +305,41 @@ p {
     background: #fed7da;
 }
 
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0 22px 0 0;
+    padding: 0;
+    list-style: none;
+    width: 50%;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.slick-dots li {
+    margin: 0 5px 50px;
+}
+
+.slick-dots button {
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+    border: 0;
+    padding: 0;
+    opacity: 0.5;
+
+    font-size: 0;
+    color: transparent;
+}
+
+.slick-dots .slick-active button {
+    opacity: 1;
+}
+
 .services_inner {
     padding: 20px;
     display: flex;
@@ -426,13 +475,16 @@ p {
 }
 
 .socialNetwork {
-    margin-top: 5px
+    margin-top: 5px;
+
 }
 
 .socialNetwork_img {
     justify-content: center;
     width: 40px;
     height: 40px;
+
+
 }
 
 .socialNetwork_link:last-child {
@@ -442,4 +494,5 @@ p {
 .socialNetwork_link {
     text-decoration: none;
     margin-right: 10px;
+
 }
