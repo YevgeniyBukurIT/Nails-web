@@ -238,12 +238,18 @@ p {
 .text_h4 {
     color: black;
     font-family: "Nunito Sans", sans-serif;
-    font-size: 24px;
+    font-size: 24px !important;
     text-transform: uppercase;
     text-align: center;
+    margin-top: 30px;
     margin-bottom: 30px;
     text-shadow: 0 2px 2px rgba(0, 0, 30, 0.6);
 
+}
+
+.text_h4_modify {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .aboutMe_text_p {
@@ -252,6 +258,7 @@ p {
     font-size: 14px;
     line-height: 1.5;
     text-align: left;
+    padding-top: 30px;
 
 }
 
@@ -439,6 +446,8 @@ p {
 
 .services_text_h4_modify {
     color: white;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .services_content_p {
@@ -447,7 +456,7 @@ p {
     font-size: 24px;
     line-height: 1.3;
     margin-top: 150px;
-    text-shadow:1px 1px 0px rgba(0, 0, 0, 0.26);
+    text-shadow:1px 1px 0 rgba(0, 0, 0, 0.26);
 }
 
 .service_5_content_p {
