@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 /*--- Default Settings ---*/
 body {
     font-family: "Nunito Sans", sans-serif;
@@ -19,6 +26,7 @@ p {
 *,
 *:before,
 *:after {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -33,6 +41,8 @@ p {
 .header.fixed {
     position: fixed;
     background: #efa1af;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
@@ -54,8 +64,14 @@ p {
 
 
 .header_inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     height: 100px;
 
@@ -64,7 +80,11 @@ p {
 }
 
 .headerLogo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -77,6 +97,8 @@ p {
 }
 
 .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -87,6 +109,8 @@ p {
     font-size: 14px;
     text-transform: uppercase;
     padding: 0 7px;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
     transition: .2s;
 }
 
@@ -111,9 +135,16 @@ p {
 
 .intro_inner {
     padding-top: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -143,6 +174,8 @@ p {
     line-height: 1.5;
     font-family: "Nunito Sans Regular", sans-serif;
     text-decoration: none;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
     transition: .2s;
 }
 
@@ -163,6 +196,8 @@ p {
     cursor: pointer;
     border: none;
     margin-top: 90px;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
     transition: 0.2s;
 }
 
@@ -177,7 +212,10 @@ p {
 }
 
 .aboutMe {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 
     margin: 40px 0;
@@ -186,6 +224,7 @@ p {
 .aboutMe_photo img {
     width: 325px;
     height: 635px;
+    -webkit-box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.7);
     box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.7);
 }
 
@@ -203,6 +242,8 @@ p {
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 30px;
+    text-shadow: 0 2px 2px rgba(0, 0, 30, 0.6);
+
 }
 
 .aboutMe_text_p {
@@ -216,8 +257,13 @@ p {
 
 /*--- Courses ---*/
 .courses {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -246,12 +292,21 @@ p {
     z-index: 2;
     width: 100%;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     text-align: center;
     background: #e55175;
     opacity: 0;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
     transition: .2s;
 
 
@@ -282,8 +337,13 @@ p {
 }
 
 .myWorks {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -294,6 +354,8 @@ p {
 .myWorks_img {
     width: 300px;
     height: 300px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
@@ -306,7 +368,11 @@ p {
 }
 
 .slick-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin: 0 22px 0 0;
     padding: 0;
@@ -343,11 +409,17 @@ p {
 
 .services_inner {
     padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .services_img {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     width: 585px;
 }
@@ -370,12 +442,16 @@ p {
 }
 
 .services_content_p {
-
     font-family: "Nunito Sans", sans-serif;
     font-style: italic;
     font-size: 24px;
     line-height: 1.3;
     margin-top: 150px;
+    text-shadow:1px 1px 0px rgba(0, 0, 0, 0.26);
+}
+
+.service_5_content_p {
+    margin-top: 100px;
 }
 
 /*--- Studio ---*/
@@ -384,7 +460,10 @@ p {
 }
 
 .studio {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -431,6 +510,8 @@ p {
     text-decoration: none;
     color: #c4174f;
     font-weight: bold;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
 }
 
@@ -453,14 +534,24 @@ p {
 }
 
 .footer_title {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     padding: 20px 0;
 }
 
 .footer_inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -481,6 +572,8 @@ p {
 }
 
 .socialNetwork_img {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     width: 40px;
     height: 40px;
