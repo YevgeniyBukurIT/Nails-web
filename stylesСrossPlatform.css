@@ -30,6 +30,9 @@ p {
     box-sizing: border-box;
 }
 
+.breadCrumbs {
+    display: none;
+}
 /*--- Header ---*/
 .header {
     position: absolute;
