@@ -37,11 +37,17 @@
 
     .nav_burger {
         display: flex;
-        margin-right: 30px;
         width: 40px;
         height: auto;
         color: white;
         transition: 0.5s;
+        margin-right: 50px;
+    }
+
+    .nav_burger_img {
+        width: 64px;
+        height: 64px;
+
     }
 
 
