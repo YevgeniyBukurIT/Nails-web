@@ -1,0 +1,155 @@
+@media (max-width: 1000px) {
+
+    /*--- Header ---*/
+    .header_inner {
+        height: 150px;
+    }
+
+    .headerLogoImg {
+        margin-left: 5px;
+        height: 130px;
+        width: 81px;
+    }
+
+    .text_h4 {
+        font-size: 30px;
+    }
+
+    .header_p {
+        font-size: 45px;
+    }
+
+    /*--- Header fixed ---*/
+    .header.fixed .header_inner {
+        border-bottom: none;
+        height: 120px;
+    }
+
+    .header.fixed .header_inner .headerLogoImg{
+        height: 115px;
+        width: auto;
+    }
+
+    /*--- Navigation ---*/
+    .nav {
+        display: none;
+    }
+
+    .nav_burger {
+        display: flex;
+        margin-right: 30px;
+        width: 40px;
+        height: auto;
+        color: white;
+        transition: 0.5s;
+    }
+
+
+    .nav_burger_inner {
+        display: none;
+        /*display: flex;*/
+        /*flex-direction: column;*/
+    }
+
+    /*--- Intro ---*/
+    .subscribe_button {
+        width: 250px;
+        height: 70px;
+        font-size: 20px;
+
+
+    }
+
+    /*--- AboutMe ---*/
+    .aboutMe_text_p {
+        font-size: 20px;
+
+    }
+
+    /*--- Courses ---*/
+    .courses_content_pUppercase {
+        font-size: 20px;
+    }
+
+    .courses_content_p {
+        font-size: 20px;
+    }
+
+    /*--- MyWorks ---*/
+    /*unchanged */
+
+    /*--- Services ---*/
+    .services_content_p {
+        font-size: 32px;
+        margin-top: 100px;
+    }
+
+    .services_content_mobile {
+        margin-top: 150px;
+    }
+
+    /*--- Studio ---*/
+    .studio_title {
+        margin-bottom: 20px;
+    }
+
+    .studio_inner {
+        width: 45%;
+        padding: 50px 35px;
+    }
+
+    .studio_inner_img {
+        width: 96px;
+        height: 96px;
+    }
+
+    .studio_inner_h4 {
+        font-size: 26px;
+
+    }
+
+    .studio_inner_p {
+        font-size:25px;
+        line-height: 1.5;
+        margin-top: 25px;
+    }
+
+    /*--- Subscribe ---*/
+    .subscribe_h4 {
+        font-size: 35px;
+        line-height: 1.5;
+    }
+
+    .subscribe_p {
+        font-size: 25px;
+
+    }
+
+    .subscribe_button_modify {
+        width: 312px;
+        height: 70px;
+    }
+
+    /*--- Footer ---*/
+    .footer {
+        height: 400px;
+    }
+
+    /*.footer_title {*/
+    /*    padding-bottom: 0;*/
+    /*}*/
+
+    .footer_inner_h4 {
+        font-size: 24px;
+        padding: 30px 35px 0;
+    }
+
+    .socialNetwork {
+        margin-top: 15px;
+    }
+
+    .socialNetwork_img {
+        width: 60px;
+        height: 60px;
+    }
+}
