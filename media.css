@@ -68,7 +68,7 @@
     .nav_burger {
         display: flex;
         color: white;
-        margin-right: 30px;
+        margin-right: 50px;
         padding: 0;
 
         background: none;
@@ -120,8 +120,13 @@
     }
 
     /*--- AboutMe ---*/
+    .text_h4_modify {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
     .aboutMe_text_p {
-        font-size: 19px;
+        font-size: 10px;
 
     }
 
@@ -145,6 +150,15 @@
 
     .services_content_mobile {
         margin-top: 150px;
+    }
+
+    .slick-dots button {
+        width: 25px;
+        height: 25px;
+    }
+
+    .slick-dots li {
+        margin: 0 15px 50px;
     }
 
     /*--- Studio ---*/
@@ -200,7 +214,15 @@
 
     .footer_inner_h4 {
         font-size: 24px;
-        padding: 30px 35px 0;
+        padding: 30px 35px 0 10px;
+    }
+
+    .footer_inner_h4:last-child {
+        padding-right: 10px;
+    }
+
+    .footer_inner_time {
+        font-size: 20px;
     }
 
     .socialNetwork {
