@@ -127,6 +127,7 @@
 
     .aboutMe_text_p {
         font-size: 19px;
+        -webkit-text-size-adjust: none;
 
     }
 
