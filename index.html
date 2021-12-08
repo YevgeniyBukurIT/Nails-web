@@ -42,11 +42,11 @@
     <meta name="Author" content="Гром Діана">
     <meta name="Copyright" content="Гром Діана">
 
-<!--    <meta name="viewport" content="width=max-width, initial-scale=1.0"/>-->
+    <!--    <meta name="viewport" content="width=max-width, initial-scale=1.0"/>-->
 
 
 </head>
-<body>
+<body id="body">
 
 <!-- Header -->
 <header class="header" id="header">
@@ -57,7 +57,7 @@
                 <p class="header_p">grom_manic_studio</p>
             </div>
 
-            <nav class="nav">
+            <nav class="nav" id="nav">
                 <a class="nav_inner" data-scroll="#intro">Головна</a>
                 <a class="nav_inner" data-scroll="#aboutMe">Про мене</a>
                 <a class="nav_inner" data-scroll="#courses">Курси</a>
@@ -66,17 +66,9 @@
                 <a class="nav_inner" data-scroll="#studio">Студія</a>
             </nav>
 
-            <div class="nav_burger">
-                <img class="nav_burger_img" src="img/header/burger_line.png">
-                <div class="nav_burger_inner">
-                    <a class="nav_inner" data-scroll="#intro">Головна</a>
-                    <a class="nav_inner" data-scroll="#aboutMe">Про мене</a>
-                    <a class="nav_inner" data-scroll="#courses">Курси</a>
-                    <a class="nav_inner" data-scroll="#myWorks">Мої роботи</a>
-                    <a class="nav_inner" data-scroll="#services">Послуги</a>
-                    <a class="nav_inner" data-scroll="#studio">Студія</a>
-                </div>
-            </div>
+            <button class="nav_burger" type="button" id="navBurger">
+                <span class="nav_burger_item"></span>
+            </button>
         </div>
     </div>
 </header>
@@ -109,7 +101,8 @@
 
         <div class="aboutMe_text">
             <h4 class="text_h4 text_h4_modify">Про мене</h4>
-            <p class="aboutMe_text_p"><span style="margin-left: 50px;"></span> Всім привіт, мене звуть Діана Гром і я чарівниця ваших пальчиків.
+            <p class="aboutMe_text_p"><span style="margin-left: 50px;"></span> Всім привіт, мене звуть Діана Гром і я
+                чарівниця ваших пальчиків.
                 Манікюром займаюся вже 3 рочки. Дуже люблю свою справу і повністю віддаюся роботі</p>
         </div>
     </div>
@@ -328,7 +321,8 @@
                     </div>
 
                     <div class="services_content">
-                        <p class="services_content_p services_content_mobile">Чистка пальчиків + покриття <br><br> 350 грн</p>
+                        <p class="services_content_p services_content_mobile">Чистка пальчиків + покриття <br><br> 350
+                            грн</p>
                     </div>
                 </div>
             </div>
@@ -340,7 +334,8 @@
                     </div>
 
                     <div class="services_content">
-                        <p class="services_content_p services_content_mobile">Чистка пальчиків + чистка стопи <br><br> 300 грн</p>
+                        <p class="services_content_p services_content_mobile">Чистка пальчиків + чистка стопи <br><br>
+                            300 грн</p>
                     </div>
                 </div>
             </div>
@@ -352,7 +347,8 @@
                     </div>
 
                     <div class="services_content">
-                        <p class="services_content_p services_content_mobile">Покриття звичайним лаком <br><br> +30 грн</p>
+                        <p class="services_content_p services_content_mobile">Покриття звичайним лаком <br><br> +30 грн
+                        </p>
                     </div>
                 </div>
             </div>
@@ -439,7 +435,7 @@
 
 
         <div class="footer_inner">
-            <h4 class="footer_inner_h4">вул. Леніна, 42<br>
+            <h4 class="footer_inner_h4">вул. Леніна, 48<br>
                 (другий поверх)</h4>
 
             <div class="footer_inner_h4">
@@ -461,7 +457,7 @@
             </div>
 
 
-            <h4 class="footer_inner_h4">+ 380 68 446 05 46 <br>
+            <h4 class="footer_inner_h4"><a style="color: white; text-decoration: none" href="tel:+380684460546">+ 380 68 446 05 46</a><br>
                 вихідні<br>
                 середа, неділя</h4>
         </div>

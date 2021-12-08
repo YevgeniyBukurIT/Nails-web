@@ -35,6 +35,8 @@ $(function () {
             scrollTop: elOffset - 150
         }, 700);
 
+        nav.removeClass('show')
+
     });
 
     //Slider
@@ -49,5 +51,15 @@ $(function () {
         dots: true,
     });
 
+    //Nav burger
+    let nav = $("#nav");
+    let navBurger = $("#navBurger");
+
+    navBurger.on('click', function (event){
+        event.preventDefault();
+
+        nav.toggleClass('show')
+
+    });
 
 });

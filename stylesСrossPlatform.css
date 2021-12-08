@@ -95,10 +95,13 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    transition: 0.5s;
+
 }
 
 .nav_burger {
     display: none;
+
 }
 
 .nav_inner {
