@@ -25,9 +25,6 @@
         height: 120px;
     }
 
-    .header.fixed .header_p {
-        font-size: 35px;
-    }
 
     .header.fixed .header_inner .headerLogoImg{
         height: 115px;
